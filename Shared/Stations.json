@@ -1,0 +1,47 @@
+[
+  {
+  "nomStation": "Vincennes",
+  "direction": "vers Noisiel",
+  "latitude":"48.8453956",
+  "longitude":"2.4261997",
+  "distance":"0",
+  "id": "36",
+  "destination": "2"
+  },
+  {
+  "nomStation": "Noisy-Champs",
+  "direction": "vers Noisiel",
+  "latitude":"48.8400735",
+  "longitude":"2.5979685",
+  "distance":"0",
+  "id": "28",
+  "destination": "2"
+  },
+  {
+  "nomStation": "Noisiel",
+  "direction": "vers Paris",
+  "latitude":"48.8435892",
+  "longitude":"2.6140001",
+  "distance":"0",
+  "id": "26",
+  "destination": "1"
+  },
+  {
+  "nomStation": "Vincennes",
+  "direction": "vers Paris",
+  "latitude":"48.8453956",
+  "longitude":"2.4261997",
+  "distance":"0",
+  "id": "36",
+  "destination": "1"
+  },
+  {
+  "nomStation": "Paris",
+  "direction": "vers Vincennes",
+  "latitude":"48.86188",
+  "longitude":"2.3414072",
+  "distance":"0",
+  "id": "8",
+  "destination": "2"
+  }
+]

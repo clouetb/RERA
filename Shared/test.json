@@ -1,0 +1,55 @@
+{
+    "response": {
+        "informations": {
+            "destination": {
+                "id": "2",
+                "name": "Boissy-St-Léger Marne-la-Vallée",
+                "slug": "boissy+st+leger+marne+la+vallee"
+            },
+            "line": "A",
+            "type": "rer",
+            "station": {
+                "id": "36",
+                "name": "Vincennes",
+                "slug": "vincennes"
+            }
+        },
+        "schedules": [
+            {
+                "id": "NEMO",
+                "destination": "Boissy Saint Leger",
+                "message": "20:40"
+            },
+            {
+                "id": "QUVE",
+                "destination": "Marne la Vallee-Chessy",
+                "message": "20:44"
+            },
+            {
+                "id": "NEMO",
+                "destination": "Boissy Saint Leger",
+                "message": "20:49"
+            },
+            {
+                "id": "OPUR",
+                "destination": "Torcy",
+                "message": "21:57"
+            },
+            {
+                "id": "NEMO",
+                "destination": "Boissy Saint Leger",
+                "message": "22:05"
+            },
+            {
+                "id": "QUVE",
+                "destination": "Marne la Vallee-Chessy",
+                "message": "22:12"
+            }
+        ]
+    },
+    "_meta": {
+        "version": "2",
+        "date": "2016-12-27T23:30:33+01:00",
+        "call": "GET /rers/a/stations/36?destination=2"
+    }
+}

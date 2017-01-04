@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D94F89921E1C4BB000FE7C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94F89911E1C4BB000FE7C7F /* Assets.xcassets */; };
+		D99446851E1179FA00435CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99446841E1179FA00435CC9 /* AppDelegate.swift */; };
+		D99446871E1179FA00435CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99446861E1179FA00435CC9 /* ViewController.swift */; };
+		D994468A1E1179FA00435CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99446881E1179FA00435CC9 /* Main.storyboard */; };
+		D994468F1E1179FA00435CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D994468D1E1179FA00435CC9 /* LaunchScreen.storyboard */; };
+		D99446BA1E117A5F00435CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99446B91E117A5F00435CC9 /* Assets.xcassets */; };
+		D99446C11E117A5F00435CC9 /* RERAWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99446C01E117A5F00435CC9 /* RERAWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D99446C81E117A5F00435CC9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99446C71E117A5F00435CC9 /* ExtensionDelegate.swift */; };
+		D99446CA1E117A5F00435CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99446C91E117A5F00435CC9 /* Assets.xcassets */; };
+		D99446CE1E117A5F00435CC9 /* RERAWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D99446B41E117A5F00435CC9 /* RERAWatch.app */; };
+		D99446E01E117BE500435CC9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99446DF1E117BE500435CC9 /* Storyboard.storyboard */; };
+		D9CF892C1E11C78300C307F2 /* Stations.json in Resources */ = {isa = PBXBuildFile; fileRef = D9CF892B1E11C78300C307F2 /* Stations.json */; };
+		D9CF892E1E11C87F00C307F2 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF892D1E11C87F00C307F2 /* Station.swift */; };
+		D9CF89321E11F84000C307F2 /* StationRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF89311E11F84000C307F2 /* StationRowController.swift */; };
+		D9CF89341E11F88500C307F2 /* TrainRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF89331E11F88500C307F2 /* TrainRowController.swift */; };
+		D9CF89361E11F8BC00C307F2 /* StationsAndTrainsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF89351E11F8BC00C307F2 /* StationsAndTrainsInterfaceController.swift */; };
+		D9CF89391E12045000C307F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CF89381E12045000C307F2 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D99446961E1179FA00435CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99446791E1179FA00435CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99446801E1179FA00435CC9;
+			remoteInfo = RERA;
+		};
+		D99446A11E1179FA00435CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99446791E1179FA00435CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99446801E1179FA00435CC9;
+			remoteInfo = RERA;
+		};
+		D99446C21E117A5F00435CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99446791E1179FA00435CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99446BF1E117A5F00435CC9;
+			remoteInfo = "RERAWatch Extension";
+		};
+		D99446CC1E117A5F00435CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99446791E1179FA00435CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99446B31E117A5F00435CC9;
+			remoteInfo = RERAWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D99446D21E117A5F00435CC9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D99446C11E117A5F00435CC9 /* RERAWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446D61E117A5F00435CC9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D99446CE1E117A5F00435CC9 /* RERAWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D94F89911E1C4BB000FE7C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D979CE781E133AFA00B9AE02 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		D99446811E1179FA00435CC9 /* RERA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RERA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99446841E1179FA00435CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D99446861E1179FA00435CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D99446891E1179FA00435CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D994468E1E1179FA00435CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D99446901E1179FA00435CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99446951E1179FA00435CC9 /* RERATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RERATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99446A01E1179FA00435CC9 /* RERAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RERAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99446B41E117A5F00435CC9 /* RERAWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RERAWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99446B91E117A5F00435CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D99446BB1E117A5F00435CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99446C01E117A5F00435CC9 /* RERAWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RERAWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99446C71E117A5F00435CC9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D99446C91E117A5F00435CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D99446CB1E117A5F00435CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99446DF1E117BE500435CC9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D9CF89291E11C73F00C307F2 /* pebble.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pebble.js; sourceTree = "<group>"; };
+		D9CF892B1E11C78300C307F2 /* Stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Stations.json; sourceTree = "<group>"; };
+		D9CF892D1E11C87F00C307F2 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		D9CF89311E11F84000C307F2 /* StationRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationRowController.swift; sourceTree = "<group>"; };
+		D9CF89331E11F88500C307F2 /* TrainRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainRowController.swift; sourceTree = "<group>"; };
+		D9CF89351E11F8BC00C307F2 /* StationsAndTrainsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsAndTrainsInterfaceController.swift; sourceTree = "<group>"; };
+		D9CF89381E12045000C307F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D994467E1E1179FA00435CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CF89391E12045000C307F2 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446921E1179FA00435CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D994469D1E1179FA00435CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446BD1E117A5F00435CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D99446781E1179FA00435CC9 = {
+			isa = PBXGroup;
+			children = (
+				D99446D81E117AF900435CC9 /* Shared */,
+				D99446831E1179FA00435CC9 /* RERA */,
+				D99446B51E117A5F00435CC9 /* RERAWatch */,
+				D99446C41E117A5F00435CC9 /* RERAWatch Extension */,
+				D99446821E1179FA00435CC9 /* Products */,
+				D9CF89371E12045000C307F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D99446821E1179FA00435CC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D99446811E1179FA00435CC9 /* RERA.app */,
+				D99446951E1179FA00435CC9 /* RERATests.xctest */,
+				D99446A01E1179FA00435CC9 /* RERAUITests.xctest */,
+				D99446B41E117A5F00435CC9 /* RERAWatch.app */,
+				D99446C01E117A5F00435CC9 /* RERAWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D99446831E1179FA00435CC9 /* RERA */ = {
+			isa = PBXGroup;
+			children = (
+				D94F89911E1C4BB000FE7C7F /* Assets.xcassets */,
+				D99446841E1179FA00435CC9 /* AppDelegate.swift */,
+				D99446861E1179FA00435CC9 /* ViewController.swift */,
+				D99446881E1179FA00435CC9 /* Main.storyboard */,
+				D994468D1E1179FA00435CC9 /* LaunchScreen.storyboard */,
+				D99446901E1179FA00435CC9 /* Info.plist */,
+			);
+			path = RERA;
+			sourceTree = "<group>";
+		};
+		D99446B51E117A5F00435CC9 /* RERAWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D99446B91E117A5F00435CC9 /* Assets.xcassets */,
+				D99446BB1E117A5F00435CC9 /* Info.plist */,
+				D99446DF1E117BE500435CC9 /* Storyboard.storyboard */,
+			);
+			path = RERAWatch;
+			sourceTree = "<group>";
+		};
+		D99446C41E117A5F00435CC9 /* RERAWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D99446C71E117A5F00435CC9 /* ExtensionDelegate.swift */,
+				D99446C91E117A5F00435CC9 /* Assets.xcassets */,
+				D99446CB1E117A5F00435CC9 /* Info.plist */,
+				D9CF89311E11F84000C307F2 /* StationRowController.swift */,
+				D9CF89331E11F88500C307F2 /* TrainRowController.swift */,
+				D9CF89351E11F8BC00C307F2 /* StationsAndTrainsInterfaceController.swift */,
+			);
+			path = "RERAWatch Extension";
+			sourceTree = "<group>";
+		};
+		D99446D81E117AF900435CC9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D979CE781E133AFA00B9AE02 /* test.json */,
+				D9CF89291E11C73F00C307F2 /* pebble.js */,
+				D9CF892B1E11C78300C307F2 /* Stations.json */,
+				D9CF892D1E11C87F00C307F2 /* Station.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D9CF89371E12045000C307F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9CF89381E12045000C307F2 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D99446801E1179FA00435CC9 /* RERA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99446A91E1179FA00435CC9 /* Build configuration list for PBXNativeTarget "RERA" */;
+			buildPhases = (
+				D994467D1E1179FA00435CC9 /* Sources */,
+				D994467E1E1179FA00435CC9 /* Frameworks */,
+				D994467F1E1179FA00435CC9 /* Resources */,
+				D99446D61E117A5F00435CC9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99446CD1E117A5F00435CC9 /* PBXTargetDependency */,
+			);
+			name = RERA;
+			productName = RERA;
+			productReference = D99446811E1179FA00435CC9 /* RERA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D99446941E1179FA00435CC9 /* RERATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99446AC1E1179FA00435CC9 /* Build configuration list for PBXNativeTarget "RERATests" */;
+			buildPhases = (
+				D99446911E1179FA00435CC9 /* Sources */,
+				D99446921E1179FA00435CC9 /* Frameworks */,
+				D99446931E1179FA00435CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99446971E1179FA00435CC9 /* PBXTargetDependency */,
+			);
+			name = RERATests;
+			productName = RERATests;
+			productReference = D99446951E1179FA00435CC9 /* RERATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D994469F1E1179FA00435CC9 /* RERAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99446AF1E1179FA00435CC9 /* Build configuration list for PBXNativeTarget "RERAUITests" */;
+			buildPhases = (
+				D994469C1E1179FA00435CC9 /* Sources */,
+				D994469D1E1179FA00435CC9 /* Frameworks */,
+				D994469E1E1179FA00435CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99446A21E1179FA00435CC9 /* PBXTargetDependency */,
+			);
+			name = RERAUITests;
+			productName = RERAUITests;
+			productReference = D99446A01E1179FA00435CC9 /* RERAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D99446B31E117A5F00435CC9 /* RERAWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99446D31E117A5F00435CC9 /* Build configuration list for PBXNativeTarget "RERAWatch" */;
+			buildPhases = (
+				D99446B21E117A5F00435CC9 /* Resources */,
+				D99446D21E117A5F00435CC9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99446C31E117A5F00435CC9 /* PBXTargetDependency */,
+			);
+			name = RERAWatch;
+			productName = RERAWatch;
+			productReference = D99446B41E117A5F00435CC9 /* RERAWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D99446BF1E117A5F00435CC9 /* RERAWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99446CF1E117A5F00435CC9 /* Build configuration list for PBXNativeTarget "RERAWatch Extension" */;
+			buildPhases = (
+				D99446BC1E117A5F00435CC9 /* Sources */,
+				D99446BD1E117A5F00435CC9 /* Frameworks */,
+				D99446BE1E117A5F00435CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RERAWatch Extension";
+			productName = "RERAWatch Extension";
+			productReference = D99446C01E117A5F00435CC9 /* RERAWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D99446791E1179FA00435CC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Benoît Clouet";
+				TargetAttributes = {
+					D99446801E1179FA00435CC9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4THZFR2ZDY;
+						ProvisioningStyle = Automatic;
+					};
+					D99446941E1179FA00435CC9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4THZFR2ZDY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D99446801E1179FA00435CC9;
+					};
+					D994469F1E1179FA00435CC9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4THZFR2ZDY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D99446801E1179FA00435CC9;
+					};
+					D99446B31E117A5F00435CC9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4THZFR2ZDY;
+						ProvisioningStyle = Automatic;
+					};
+					D99446BF1E117A5F00435CC9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4THZFR2ZDY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D994467C1E1179FA00435CC9 /* Build configuration list for PBXProject "RERA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D99446781E1179FA00435CC9;
+			productRefGroup = D99446821E1179FA00435CC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D99446801E1179FA00435CC9 /* RERA */,
+				D99446941E1179FA00435CC9 /* RERATests */,
+				D994469F1E1179FA00435CC9 /* RERAUITests */,
+				D99446B31E117A5F00435CC9 /* RERAWatch */,
+				D99446BF1E117A5F00435CC9 /* RERAWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D994467F1E1179FA00435CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D994468F1E1179FA00435CC9 /* LaunchScreen.storyboard in Resources */,
+				D94F89921E1C4BB000FE7C7F /* Assets.xcassets in Resources */,
+				D994468A1E1179FA00435CC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446931E1179FA00435CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D994469E1E1179FA00435CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446B21E117A5F00435CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99446BA1E117A5F00435CC9 /* Assets.xcassets in Resources */,
+				D99446E01E117BE500435CC9 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446BE1E117A5F00435CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99446CA1E117A5F00435CC9 /* Assets.xcassets in Resources */,
+				D9CF892C1E11C78300C307F2 /* Stations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D994467D1E1179FA00435CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99446871E1179FA00435CC9 /* ViewController.swift in Sources */,
+				D99446851E1179FA00435CC9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446911E1179FA00435CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D994469C1E1179FA00435CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99446BC1E117A5F00435CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CF89321E11F84000C307F2 /* StationRowController.swift in Sources */,
+				D99446C81E117A5F00435CC9 /* ExtensionDelegate.swift in Sources */,
+				D9CF89361E11F8BC00C307F2 /* StationsAndTrainsInterfaceController.swift in Sources */,
+				D9CF892E1E11C87F00C307F2 /* Station.swift in Sources */,
+				D9CF89341E11F88500C307F2 /* TrainRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D99446971E1179FA00435CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99446801E1179FA00435CC9 /* RERA */;
+			targetProxy = D99446961E1179FA00435CC9 /* PBXContainerItemProxy */;
+		};
+		D99446A21E1179FA00435CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99446801E1179FA00435CC9 /* RERA */;
+			targetProxy = D99446A11E1179FA00435CC9 /* PBXContainerItemProxy */;
+		};
+		D99446C31E117A5F00435CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99446BF1E117A5F00435CC9 /* RERAWatch Extension */;
+			targetProxy = D99446C21E117A5F00435CC9 /* PBXContainerItemProxy */;
+		};
+		D99446CD1E117A5F00435CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99446B31E117A5F00435CC9 /* RERAWatch */;
+			targetProxy = D99446CC1E117A5F00435CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D99446881E1179FA00435CC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99446891E1179FA00435CC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D994468D1E1179FA00435CC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D994468E1E1179FA00435CC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D99446A71E1179FA00435CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D99446A81E1179FA00435CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D99446AA1E1179FA00435CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = RERA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D99446AB1E1179FA00435CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = RERA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D99446AD1E1179FA00435CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = RERATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RERA.app/RERA";
+			};
+			name = Debug;
+		};
+		D99446AE1E1179FA00435CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = RERATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RERA.app/RERA";
+			};
+			name = Release;
+		};
+		D99446B01E1179FA00435CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = RERAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RERA;
+			};
+			name = Debug;
+		};
+		D99446B11E1179FA00435CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = RERAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RERA;
+			};
+			name = Release;
+		};
+		D99446D01E117A5F00435CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = "RERAWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERA.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D99446D11E117A5F00435CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				INFOPLIST_FILE = "RERAWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERA.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		D99446D41E117A5F00435CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				IBSC_MODULE = RERAWatch_Extension;
+				INFOPLIST_FILE = RERAWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERA.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D99446D51E117A5F00435CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4THZFR2ZDY;
+				IBSC_MODULE = RERAWatch_Extension;
+				INFOPLIST_FILE = RERAWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.bclouet.RERA.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D994467C1E1179FA00435CC9 /* Build configuration list for PBXProject "RERA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99446A71E1179FA00435CC9 /* Debug */,
+				D99446A81E1179FA00435CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99446A91E1179FA00435CC9 /* Build configuration list for PBXNativeTarget "RERA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99446AA1E1179FA00435CC9 /* Debug */,
+				D99446AB1E1179FA00435CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99446AC1E1179FA00435CC9 /* Build configuration list for PBXNativeTarget "RERATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99446AD1E1179FA00435CC9 /* Debug */,
+				D99446AE1E1179FA00435CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99446AF1E1179FA00435CC9 /* Build configuration list for PBXNativeTarget "RERAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99446B01E1179FA00435CC9 /* Debug */,
+				D99446B11E1179FA00435CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99446CF1E117A5F00435CC9 /* Build configuration list for PBXNativeTarget "RERAWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99446D01E117A5F00435CC9 /* Debug */,
+				D99446D11E117A5F00435CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99446D31E117A5F00435CC9 /* Build configuration list for PBXNativeTarget "RERAWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99446D41E117A5F00435CC9 /* Debug */,
+				D99446D51E117A5F00435CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D99446791E1179FA00435CC9 /* Project object */;
+}

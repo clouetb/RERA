@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sln-zz-5ph">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--RER A-->
+        <scene sceneID="QJH-Hw-BvM">
+            <objects>
+                <controller title="RER A" id="Sln-zz-5ph" customClass="StationsAndTrainsInterfaceController" customModule="RERAWatch_Extension">
+                    <items>
+                        <table alignment="left" id="p7I-56-vK9">
+                            <items>
+                                <tableRow identifier="StationRow" id="JSe-WB-fmM" customClass="StationRowController" customModule="RERAWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="fzf-ZG-dNl">
+                                        <items>
+                                            <separator alignment="left" id="u8j-cx-FCA">
+                                                <color key="color" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <label alignment="left" text="Vincennes" id="Qyr-Bh-xmZ">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                            </label>
+                                            <label alignment="left" text="Marne-la-vallée Chessy" id="nlM-eN-X9q">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblDirection" destination="nlM-eN-X9q" id="aqY-Y9-3sC"/>
+                                        <outlet property="lblStation" destination="Qyr-Bh-xmZ" id="XbK-Nc-HYK"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="TrainRow" selectable="NO" id="XT0-GL-QMI" customClass="TrainRowController" customModule="RERAWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="PZP-sm-Wgl">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="xYC-7l-PfT">
+                                                <color key="color" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="Qys-KY-JwF">
+                                                <items>
+                                                    <label alignment="left" text="Boissy Saint Léger" id="nQv-d0-eG7">
+                                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                                    </label>
+                                                    <group alignment="left" id="bG0-Pc-cUV">
+                                                        <items>
+                                                            <label width="78" alignment="left" verticalAlignment="bottom" text="20:34" id="CzR-bG-5Cd">
+                                                                <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                            </label>
+                                                            <label width="50" alignment="right" verticalAlignment="bottom" text="1 min" textAlignment="right" id="JbQ-GW-r8P">
+                                                                <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblDirection" destination="nQv-d0-eG7" id="ukv-fr-2V4"/>
+                                        <outlet property="lblHour" destination="CzR-bG-5Cd" id="vDX-9F-odS"/>
+                                        <outlet property="lblRemaining" destination="JbQ-GW-r8P" id="eSN-x3-a1n"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="stationsAndTrainsTable" destination="p7I-56-vK9" id="x4o-7Z-sh7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-316" y="-360"/>
+        </scene>
+    </scenes>
+</document>
